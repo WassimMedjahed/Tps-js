@@ -43,13 +43,13 @@
             />
           </div>
           <div class="col-2">
-            <button class="btn btn-success" id="btnAjouter">
+            <button class="btn btn-success" id="btnAjouter" onclick="ajouter()">
               <i class="fa fa-plus"></i>
             </button>
           </div>
         </div>
         <!-- table.table>tr>thead>th*2 -->
-        <table class="table table-striped mt-4">
+        <table class="table table-striped mt-4" id="table">
           <thead>
             <tr>
               <th>Fruit</th>
@@ -58,28 +58,28 @@
           </thead>
           <!-- tbody>tr>td*2 -->
           <tbody id="myTbody">
-            <tr>
-              <td>pomme</td>
+            <tr id="tr0">
+              <td id="f0">pomme</td>
               <td>
-                <button class="btn btn-danger">
+                <button class="btn btn-danger" onclick="supprimer('tr0')" >
                   <i class="fa fa-trash"></i>
                 </button>
               </td>
             </tr>
           
-            <tr>
-              <td>poire</td>
+            <tr id="tr1">
+              <td id="f1">poire</td>
               <td>
-                <button class="btn btn-danger">
+                <button class="btn btn-danger" onclick="supprimer('tr1')">
                   <i class="fa fa-trash"></i>
                 </button>
               </td>
             </tr>
           
-            <tr>
-              <td>cerise</td>
+            <tr id="tr2">
+              <td id="f2">cerise</td>
               <td>
-                <button class="btn btn-danger">
+                <button class="btn btn-danger" onclick="supprimer('tr2')" >
                   <i class="fa fa-trash"></i>
                 </button>
               </td>
@@ -93,5 +93,6 @@
         <p class="m-0 text-center text-white">Copyright &copy;IMC 2023</p>
       </div>
     </footer>
+    <script src="fruits.js"></script>
   </body>
 </html>
