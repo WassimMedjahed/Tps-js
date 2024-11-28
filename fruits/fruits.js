@@ -46,6 +46,9 @@ function ajouter() {
     console.log(fruits); 
 }
 
+
+
+
 function supprimer(id) {
     
     document.getElementById(id).remove();
