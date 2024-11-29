@@ -1,14 +1,10 @@
-let tab = [];
+let tab1 = [];
 
-for (let i=0; i<12;i++)
-
-
-
-
-
-document.getElementById('btnAjouter').onclick = ()=>{
-
-    const template = document.getElementById('info');
-    const clone = template.content.cloneNode(true);
-    document.getElementById('demo').appendChild(clone);  
+for (let i=0; i < 12; i++){
+    tab1.push(i);
 }
+
+
+let tab2 = tab1
+console.log(typeof(tab1));
+
