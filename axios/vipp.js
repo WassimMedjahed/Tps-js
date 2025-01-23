@@ -49,6 +49,7 @@ const afficherHTML = () => {
     let btnModifier = clone.querySelector(".btn-warning");
     btnModifier.onclick = async () => {
       p.status = !p.status; 
+      
       const urlUpdate = `${url}${noeud}/${p.id}.json`;
       await axios.patch(urlUpdate, { status: p.status }); 
       afficherHTML();

@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jeux</title>
-	<meta name="robots" content="noindex">
-	<link rel="icon" type="image/png" href="logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="memory.css">
 </head>
-<link rel="stylesheet" href="memory.css">
 
 <body>
-	<div class="container">
-		<div><img src="img/4.webp"></div>
-		<div class="green"><img src="img/0.webp"></div>
-		<div><img src="img/3.webp"></div>
-		<div><img src="img/6.webp"></div>
-		<div><img src="img/6.webp"></div>
-	</div>
-	<script src="memory.js"></script>
+  <div class="timer">Temps écoulé : 0s</div>
+  <div class="grid-container"></div>
+  <div class="win-message" style="display: none;">
+    <p>Félicitations, tu as gagné !</p>
+    <button class="restart-btn">Rejouer</button>
+  </div>
+  <script src="memory.js"></script>
 </body>
 
 </html>
